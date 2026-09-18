@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Современный адаптивный сайт — простой, быстрый и удобный на любом устройстве."
+    />
+    <title>Мой первый сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#home" aria-label="На главную">
+          <span class="logo__mark">М</span>
+          <span>Мой сайт</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="main-menu" aria-label="Основная навигация">
+          <a class="nav__link active" href="#home">Главная</a>
+          <a class="nav__link" href="#about">О проекте</a>
+          <a class="nav__link" href="#features">Возможности</a>
+          <a class="nav__link" href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="container hero__content">
+          <div class="hero__text">
+            <div class="eyebrow"><span></span> Добро пожаловать</div>
+            <h1>Мой первый<br /><span>сайт</span></h1>
+            <p>
+              Простое и красивое пространство, где идеи превращаются в реальность.
+              Современно, удобно и с вниманием к каждой детали.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#features">
+                Начать знакомство
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="button button--secondary" href="#about">Узнать больше</a>
+            </div>
+            <div class="hero__note">
+              <span class="avatars" aria-hidden="true">
+                <span>А</span><span>М</span><span>К</span>
+              </span>
+              <span><strong>100% адаптивный</strong><br />для любых устройств</span>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-label="Декоративная иллюстрация интерфейса">
+            <div class="orbit orbit--large"></div>
+            <div class="orbit orbit--small"></div>
+            <div class="floating-card floating-card--top">
+              <span class="floating-card__icon">✦</span>
+              <span><small>Новая идея</small><strong>Всё начинается здесь</strong></span>
+            </div>
+            <div class="dashboard-card">
+              <div class="dashboard-card__header">
+                <div><i></i><i></i><i></i></div>
+                <span>•••</span>
+              </div>
+              <div class="dashboard-card__body">
+                <div class="dashboard-card__label">Ваш прогресс</div>
+                <div class="dashboard-card__number">84<span>%</span></div>
+                <div class="progress"><span></span></div>
+                <div class="mini-cards">
+                  <div><span>Проекты</span><strong>12</strong></div>
+                  <div><span>Идеи</span><strong>28</strong></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card floating-card--bottom">
+              <span class="status-dot"></span>
+              <span><small>Статус</small><strong>Всё готово!</strong></span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-hint" href="#about" aria-label="Прокрутить вниз"><span>↓</span> Листайте вниз</a>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container section__heading">
+          <span class="section__kicker">Просто о главном</span>
+          <h2>Сайт, которым приятно пользоваться</h2>
+          <p>Чистый дизайн помогает сосредоточиться на важном и легко найти нужную информацию.</p>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="container features__grid">
+          <article class="feature-card">
+            <span class="feature-card__icon">◇</span>
+            <h3>Современный дизайн</h3>
+            <p>Выверенная типографика, мягкие цвета и выразительные детали.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon">↗</span>
+            <h3>Быстрая работа</h3>
+            <p>Лёгкая структура без лишних элементов и долгих загрузок.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__icon">⌁</span>
+            <h3>Всегда под рукой</h3>
+            <p>Удобно выглядит на компьютере, планшете и смартфоне.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__inner">
+          <div><span>Есть идея?</span><h2>Давайте создадим что-то прекрасное</h2></div>
+          <a class="button button--light" href="mailto:hello@example.com">Написать нам <span>→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"><span>© <span id="year"></span> Мой сайт</span><span>Сделано с вниманием к деталям</span></div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
